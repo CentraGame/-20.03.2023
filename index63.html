@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+    <title>Пример 63</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const clientId = prompt('Введите ваш id')
+        function createOAuthString(host, scope,) {
+            return `${host}/lgin/oauth/autorize?client_id=${clientId}&scope=${scope}`
+        }
+        console.log (createOAuthString('https://github.com', 'fufaev', 'repo,uses'))
+        </script>
+</body>
+</html>

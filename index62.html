@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Пример 62</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const mult = (x,y) => x * y
+      let x = prompt('Введите первый множетель:');
+      while (isNaN(+x)) {
+      alert('Неверный формат введенного значения. Необходимо ввести число больше 0.\nДавайте попробуем ещё раз!')
+      x = prompt('Введите первый множетель:').replace(/\s+/g, '');
+    }
+      let y = prompt('Введите второq множетель:');
+      while (isNaN(+y)) {
+      alert('Неверный формат введенного значения. Необходимо ввести число.\nДавайте попробуем ещё раз!')
+      y = prompt('Введите второй множетель:').replace(/\s+/g, '');
+    }
+    const string = `The multiplying of ${x} and ${y} is ${mult(x, y)}.`
+    console.log (string);
+        </script>
+</body>
+</html>
